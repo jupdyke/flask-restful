@@ -1,9 +1,10 @@
-from datetime import datetime
-from calendar import timegm
-import pytz
-from decimal import Decimal as MyDecimal, ROUND_HALF_EVEN
-from email.utils import formatdate
 import six
+import pytz
+from calendar import timegm
+from datetime import datetime
+from email.utils import formatdate
+from decimal import Decimal as MyDecimal, ROUND_HALF_EVEN
+
 try:
     from urlparse import urlparse, urlunparse
 except ImportError:

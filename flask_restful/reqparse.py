@@ -1,11 +1,10 @@
+import six
+import decimal
+import flask_restful
 from copy import deepcopy
+from werkzeug import exceptions
 from flask import current_app, request
 from werkzeug.datastructures import MultiDict, FileStorage
-from werkzeug import exceptions
-import flask_restful
-import decimal
-import six
-
 
 class Namespace(dict):
     def __getattr__(self, name):

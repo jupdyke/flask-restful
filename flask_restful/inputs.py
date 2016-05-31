@@ -1,10 +1,9 @@
+import re
+import pytz
+import aniso8601
 from calendar import timegm
 from datetime import datetime, time, timedelta
 from email.utils import parsedate_tz, mktime_tz
-import re
-
-import aniso8601
-import pytz
 
 # Constants for upgrading date-based intervals to full datetimes.
 START_OF_DAY = time(0, 0, 0, tzinfo=pytz.UTC)

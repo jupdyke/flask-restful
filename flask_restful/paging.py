@@ -1,5 +1,5 @@
 from flask_restful.utils.crypto import decrypt, encrypt
-DEFAULT_PAGE_SIZE = 50
+DEFAULT_PAGE_SIZE = 10
 
 
 def retrieve_next_page(key, seed, args, callback, initial_bookmark=None):
